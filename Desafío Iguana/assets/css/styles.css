@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 7;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.foto-iguana {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+     background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+}
+
+
+.descripcion-iguana {
+    background-color: black;
+    display: flex;
+}
+
+
+.iguana-chica-texto{
+    color: white;
+    font-family: 'Raleway', sans-serif;;
+    font-size: 16px;
+    font-weight: 300;
+    width: 50%;
+    padding-top:76px;
+    padding-bottom: 75px;
+    padding-left: 150px;
+
+}
+
+img.iguana-chica {
+    top: 845px;
+    left: 731px;
+    width: 399px;
+    height: 237px;
+    padding-top: 45px;
+    padding-bottom: 66px;
+}
+
+.iguana-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.caracteristicas {
+    font-family: 'Raleway', sans-serif;;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 75px;
+    padding-left: 465px;
+    padding-right: 465px;
+    padding-bottom: 97px;
+    
+}
+
+.seccion-3 {
+    background-color: #1E1A13;
+    text-align: center;
+    padding: 20px;
+}
+
+.caja-grande {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+        padding-left: 150px;
+}
+
+i {
+    color: white;
+}
+
+.textos-iconos {
+  font-family: 'Raleway', sans-serif;;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.cajita {
+    display: flex;
+}
+
+.galeria {
+    display: flex;
+    margin: 0;
+    background-color: black;
+    flex-wrap: wrap;
+        justify-content: space-around;
+}
+
+.galeria img {
+max-width: 100%;
+}
+
+.images-galeria {
+    display: flex;
+    padding-top: 73px;
+    padding-bottom: 73px;
+    width: 25%;
+}
+
+footer {
+    margin: 0;
+    background-color: #1E1A13;
+    padding: 39px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;;
+    font-size: 20px;
+    font-weight: 300;
+    color: white
+}

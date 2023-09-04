@@ -1,0 +1,60 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:peachpuff;
+
+}
+
+.header {
+    background-image:url("foto-1.avif");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header h1 {
+    color: palegoldenrod;
+    font-size: 68px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+p.bajada {
+    font-size: 30px;;
+    color: peru;
+    text-align: center;
+}
+
+span.star {
+    color:peru;
+}
+
+.products {
+    width: 90%;
+    margin: auto;
+
+}
+.products td {
+    width: 50%;
+    padding: 2em;
+
+}
+.products img {
+    width: 100%;
+    border: solid 1px #333;
+}
+
+.products p {
+    font-weight:bold;
+    font-size: 1.5em;
+    color: peru;
+}
+
+.footer {
+    height: 3em;
+    line-height: 3em;
+    background-color: peru;
+    color: darkmagenta;
+    text-align: center;
+    font-weight: bold;
+}
