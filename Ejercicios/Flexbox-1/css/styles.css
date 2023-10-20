@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero {
+    background-image: url('https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.content {
+    font-size: 3em;
+    font-stretch: ultra-expanded;
+    height: 8em;
+    width: 100%;
+    color: turquoise;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    line-height: 2em;
+}

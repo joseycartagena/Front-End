@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-ppal {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sidebar{
+    height: 100vh;
+    width: 400px;
+    background-color: #fff;
+    overflow-y: auto;   
+}
+.sidebar::-webkit-scrollbar {
+    width: 0;   
+}
+
+.sidebar hr {
+    border-top: solid 1px #bec1bb;
+}
+
+.sidebar-list li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.networking {
+    background-color: #E8EBE4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.networking h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    padding-top: 18px;
+}
+
+.networking p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 5px 20em;
+    text-align: center;
+
+}
+
+.networking .texto-bold {
+    font-family: 'Roboto', sans-serif;
+}
+
+.networking img {
+    width: 250px;
+    border-radius: 10px
+}
+
+.imagen-contacto {
+    height: 100%;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 99999px;
+    margin: 15px 0px;
+    margin-left: 24px;
+}
+
+.nombres-contacto {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px; 
+    flex-basis: 10rem;
+}
+
+.imagen-contacto-ppal {
+    height: 100%;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 99999px;
+    margin: 15px 0px;
+}
+
+.contacto-principal li {
+    list-style: none;
+}
+
+
+.contacto-principal li{
+    list-style: none;
+    display: flex;
+    padding-left: 36px;
+}
+
+.usuario-ppal {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+
+.usuario-ppal p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #bec1bb;;
+}
+
+.iconos-ppal {
+    color: #bec1bb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+
+.nuevo-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.nuevo-chat a{
+    text-decoration: none;
+}
+
+.boton {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #a491d2;
+    color: white;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

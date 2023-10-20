@@ -1,0 +1,23 @@
+.flex{
+    display:flex;
+    width: 500px;
+    border: solid 1px;
+    }
+    .flex-item{
+    background-color: aqua;
+    border: solid 1px black;
+    margin: 1px;
+    flex-basis: 200px;
+    flex-shrink: 0;
+    }
+    
+    .item-1{
+        flex-shrink: 1;
+    }
+
+  .item-2{
+        flex-shrink: 4;
+    }
+    .item-3{
+        flex-shrink: 1;
+    }

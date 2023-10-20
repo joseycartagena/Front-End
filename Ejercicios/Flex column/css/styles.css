@@ -1,0 +1,40 @@
+/*body, menu{
+    margin: 0;
+    }
+    menu {
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    }
+    menu li{
+    padding: 1em;
+    list-style: none;
+    }
+    menu a{
+    text-decoration: none;
+    color: white;
+    color: rgba(255, 255, 255, 0.6);
+    }
+    menu a:hover{
+    color: white;
+    }
+    menu ul{ /* Estos son todos los ul dentro de menús, sean hijos directos o no
+    *
+    display: flex;
+    }*/
+
+    /* style.css */
+.flex{
+    display:flex;
+    }
+    .flex-item{
+    background-color: aqua;
+    border: solid 1px black;
+    margin: 1px;
+    flex-grow: 1;
+    }
+    .item-2{
+        flex-grow: 3;
+        }

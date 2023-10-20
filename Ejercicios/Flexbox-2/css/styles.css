@@ -1,0 +1,38 @@
+body, menu {
+    margin: 0;
+}
+
+/*.menu-vertical {
+    display: flex;
+}*/
+
+menu {
+    background-color: slateblue;
+    width: 200px;
+    min-height: 100vh;
+}
+
+menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+menu li {
+    padding: 1em;
+    list-style: none;
+}
+
+menu a {
+    text-decoration: none;
+    color: orange;
+}
+
+menu a:hover {
+    color: white;
+}
+
+.menu-ppal {
+    display: flex;
+}
