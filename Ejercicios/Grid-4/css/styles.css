@@ -1,0 +1,41 @@
+.head{
+    grid-area: header;
+    background-color: #66f;
+    height: 80px;
+    }
+
+.menu-ppal{
+        grid-area: menu-p;
+        background-color: #566f;
+        height: 80px;
+        }
+
+    .lateral{
+    grid-area: lat;
+    background-color: #666f;
+    height: 200px;
+    }
+    .ppal{
+    grid-area: princi;
+    background-color: #646f;
+    }
+    .ads{
+        grid-area: ad;
+        background-color: #626f;
+        }
+    .futer{
+    grid-area: footer;
+    background-color: #667f;
+    height: 80px;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "menu-p menu-p menu-p menu-p"
+    "lat princi princi ad"
+    "footer footer footer footer";
+    gap: 10px;
+    height: 200px;    
+}
