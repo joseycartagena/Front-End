@@ -1,0 +1,21 @@
+button {
+    background-color: aqua;
+}
+
+@media (min-width:576px) {
+    button {
+        border-radius: 15px;
+    }
+}
+
+@media (min-width:768px) {
+    button {
+        color:fuchsia;
+    }
+}
+
+@media (min-width:992px) {
+    button {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+@media (min-width: 576px) {
+    .parrafo {
+        font-family: monospace;
+        color: blue;
+    }
+}
+
+@media (max-width: 576px) {
+    .parrafo {
+        font-family: fantasy;
+        color: brown;
+    }
+}

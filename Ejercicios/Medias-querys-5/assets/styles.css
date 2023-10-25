@@ -1,0 +1,38 @@
+nav {
+    padding: 10px;
+    grid-area: menu;
+    background-color: yellow;
+    color: red;
+}
+
+main {
+    grid-area: ppal;
+    padding: 10px;
+}
+
+footer {
+    grid-area: futer;
+    background-color: springgreen;
+    color: white;
+    padding: 10px;
+}
+
+div {
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: 
+    "menu"
+    "ppal"
+    "futer";
+}
+
+@media (min-width: 992px) {
+    div {
+        grid-template-areas: 
+        "menu ppal"
+        "menu ppal"
+        "menu futer"
+        ;
+    }
+}
