@@ -1,0 +1,24 @@
+ul {
+    padding: 10px;
+    list-style: none;
+    color: white;
+    background: #749c2c;
+    display: flex;
+    flex-direction: column;
+    }
+ul li {
+    padding: 5px;
+    }
+
+@media (min-width: 576px) {
+        ul {
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    }
+
+@media (min-width: 768px) {
+        ul {
+        justify-content: flex-end;
+        }
+    }

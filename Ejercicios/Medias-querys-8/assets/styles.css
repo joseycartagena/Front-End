@@ -1,0 +1,31 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: limegreen;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor img{
+    width: 120px;
+}
+
+.foto {
+    margin-bottom: 60px;
+}
+
+@media (min-width: 576px) {
+    .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .foto {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+}
