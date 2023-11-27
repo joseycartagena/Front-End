@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+    <input type="text" id="blue">
+    <input type="text" id="red">
+    <button onclick="
+
+    var blue = document.querySelector('#blue').value
+    var red = document.querySelector('#red').value
+
+    division = (blue) / (red)
+
+    if (division >= 1) {
+    p = document.querySelector('#parrafo')
+    p.innerHTML = 'Alcanza'
+    }
+
+    else{
+    p = document.querySelector('#parrafo')
+    p.innerHTML = 'No alcanza'
+    }"
+    >Calcular</button>
+
+</body>
+</html>

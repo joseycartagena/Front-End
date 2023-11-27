@@ -1,0 +1,47 @@
+.boton {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform: rotate(45deg) scale(1.5);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    animation-name: colorear;
+    animation-iteration-count:
+   infinite;
+    animation-duration: 5s;
+    /* Se aplica la animación
+   "example" a la caja */
+   }
+   @keyframes colorear {
+    from {
+    background-color: #0079a1;
+    }
+    to {
+    background-color: orange;
+    }
+   }
+
+
+   .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .text {
+    font-size: 3em;
+    animation: move 2s infinite;
+    animation-direction: alternate;
+   }
+   @keyframes move {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(200px);
+    }
+   }

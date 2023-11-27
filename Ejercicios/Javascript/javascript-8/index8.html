@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mensaje"></p>
+    <input type="text" id="blue">
+    <button onclick="
+    value = document.querySelector('#blue').value
+
+    if (value < 576) {
+    p = document.querySelector('#mensaje')
+    p.innerHTML = 'XS'
+    }
+
+    else if (value <= 768) {
+    p.innerHTML = 'SM'
+    }
+
+    else if (value <= 962) {
+    p.innerHTML = 'MD'
+    }
+
+    else {
+    p.innerHTML = 'XL'    
+    }
+
+    ">
+    Verificar
+    </button>
+</body>
+</html>

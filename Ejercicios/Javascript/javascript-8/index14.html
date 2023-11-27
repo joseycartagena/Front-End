@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="s-actual"></label>
+    <input name="s-actual" id="s-actual">
+
+
+    <label for="s-anterior"></label>
+    <input name="s-anterior" id="s-anterior">
+
+    <button onclick="
+
+    var actual = document.querySelector('#s-actual').value
+    var anterior = document.querySelector('#s-anterior').value
+
+    if (actual || anterior == true) {
+    console.log('Lo lograste')
+    }
+    else{
+        console.log('No lo lograste')
+    } 
+    ">
+        Revisar
+    </button>
+</body>
+</html>

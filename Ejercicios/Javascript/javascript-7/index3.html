@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<p> ¿Qué lenguaje de programación estamos aprendiendo? </p>
+<select id="selector" onchange="
+elemento_seleccionado = document.querySelector('#selector')
+elemento_resultado = document.querySelector('#resultado')
+elemento_resultado.innerHTML = 'La alternativa es ' +
+elemento_seleccionado.value
+">
+<option value="incorrecta">Java</option>
+<option value="correcta">Javascript</option>
+<option value="incorrecta">Python</option>
+<option value="incorrecta">Ruby</option>
+</select>
+<span id="resultado"> </span>
+</body>
+</html>
