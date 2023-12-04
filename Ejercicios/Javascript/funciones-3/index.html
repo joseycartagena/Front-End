@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pintar('black')"> Pintar negro</button>
+    <button onclick="pintar('red')"> Pintar rojo</button>
+    <button onclick="pintar('green')"> Pintar verde</button>
+    <script>
+    function pintar(color) {
+    elemento = document.querySelector("body");
+    elemento.style.backgroundColor = color;
+    }
+    </script>
+</body>
+</html>
