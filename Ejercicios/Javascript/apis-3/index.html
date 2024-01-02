@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="user"></div>
+    <script>
+async function getRandomUser(){
+ const res = await fetch("https://randomuser.me/api")
+ const data = await res.json()
+ console.log(data)
+ const element = document.querySelector(".user")
+ element.innerHTML = `
+  <p>Email: ${data.results[0].email}</p>
+  <p>Telephone: ${data.results[0].phone}</p>
+  <p>Name: ${data.results[0].name.title} ${data.results[0].name.first} ${data.results[0].name.last}</p>
+  <p>Location: ${data.results[0].location.city}</p>
+  <img src="${data.results[0].picture.large}" alt="User Picture">
+`;
+
+}
+ getRandomUser()
+    </script>
+</body>
+</html>

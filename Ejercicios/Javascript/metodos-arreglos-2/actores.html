@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="nuevaTarea">
+    <button id="agregarTarea">Sumar</button>
+    <h3>Tareas: </h3>
+    <ul id="tareas"></ul>
+
+    <script>
+
+        const invitados = [
+        { id: 431, nombre: "Jhonny Depp" },
+        { id: 124, nombre: "Brad Pitt" },
+        { id: 541, nombre: "Leonardo DiCaprio" },
+        { id: 664, nombre: "Morgan Freeman" }
+];
+
+
+        const listaDeTareas = document.querySelector("#invitados")
+        const tareaInput = document.querySelector("#nuevaTarea")
+        const btnSumar = document.querySelector("#agregarTarea")
+        const invitados = []
+
+
+        btnSumar.addEventListener("click", () => {
+            nuevaTarea = {id: Date.now(), nombre: tareaInput.value}
+            invitados.push(nuevaTarea)
+            tareaInput.value = ""
+
+
+            function resta(id) {
+                const index = invitados.findIndex((ele) => ele.id == id)
+                invitados.splice(index, 1)
+                renderTareas()
+            
+
+            function renderTareas(){
+            let html = ""
+            for (let tarea of invitados) {
+                html += `<li>${tarea.nombre}
+                
+                    <button onclick="borrar(${invitado.id})"> x </button></li>`;     
+            }
+        listaDeTareas.innerHTML = html;
+    }
+    }
+
+        })
+    </script>
+</body>
+</html>

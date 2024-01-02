@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="productos"></section>
+    <script>
+        const seccionProductos = document.querySelector(".productos")
+
+        const producto = {
+ id: 43,
+ titulo: "Cafetera magnética",
+ precio: 23990,
+ color: "rojo",
+ src: "https://ae01.alicdn.com/kf/H178719f7776f4f03b90ecf0bf1c26133L.jpeg_640x640Q90.jpeg_.webp", // ingresa aquí la URL de la imagen,
+ descripción: `Calienta tu café matutino
+ con la nueva tecnología magnética`
+};
+
+        seccionProductos.innerHTML = `
+ <article class="producto">
+ <h4>${producto.titulo}</h4>
+ <h6>Precio: $${producto.precio}</h6>
+ <p>Color: ${producto.color}</p>
+ <img src = "${producto.src}">
+<p>${producto.descripción}</p>
+ </article>
+`;
+
+
+    </script>
+</body>
+</html>

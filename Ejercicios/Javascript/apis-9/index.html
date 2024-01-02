@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+/>
+<title>Chart JS</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Estadísticas de Pikachu</h1>
+<div class="grafica">
+<canvas id="myChart"></canvas>
+</div>
+<script>
+async function getAndCreateDataToChart() {
+const res = await
+fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
+const pikachu = await res.json();
+const labels = pikachu.stats.map((stat) => {
+return stat.stat.name.toUpperCase();
+});
+const data = pikachu.stats.map((stat) => {
+return stat.base_stat;
+});
+const datasets = [
+{
+    label: "Estadísticas de Pikachu",
+borderColor: "rgb(255, 99, 132)",
+data
+}
+];
+return { labels, datasets };
+}
+async function renderGrafica() {
+const data = await getAndCreateDataToChart();
+const config = {
+type: "line",
+data: {
+labels: data.labels,
+datasets: data.datasets
+}
+};
+const myChart = document.getElementById("myChart");
+myChart.style.backgroundColor = "white";
+new Chart(myChart, config);
+}
+renderGrafica();
+</script>
+</body>
+</html>

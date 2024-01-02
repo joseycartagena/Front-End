@@ -1,0 +1,39 @@
+<input id="nuevoInvitado"> <!-- 1 -->
+<button id="agregarInvitado">Agregar</button> <!-- 2 -->
+<h3>Invitados: </h3>
+<ul id="invitados"></ul> <!-- 3 -->
+Total: <span id="cuentaInvitados"></span>
+<script>
+const listaDeInvitados = document.querySelector("#invitados")
+const invitadoInput = document.querySelector("#nuevoInvitado")
+const btnAgregar = document.querySelector("#agregarInvitado")
+const conteo = document.querySelector("#cuentaInvitados")
+/* Aquí agregaremos el script más adelante */
+
+const invitados = []
+
+function renderInvitado(){
+let html = ""
+for (let invitado of invitados) {
+html += `<li>${invitado.nombre} <button onclick="borrar(${invitado.id})"> X </button></li>`;
+}
+cuentaInvitados.innerHTML = invitados.length
+listaDeInvitados.innerHTML = html;
+}
+
+btnAgregar.addEventListener("click", () => {
+/* Agregamos el invitado al arreglo */
+const nuevoInvitado = invitadoInput.value
+invitados.push({id: Date.now(), nombre: nuevoInvitado})
+invitadoInput.value = ""
+/* Actualizamos la información en el HTML */
+renderInvitado()
+});
+
+
+function borrar(id){
+const index = invitados.findIndex((ele) => ele.id == id)
+invitados.splice(index, 1)
+renderInvitado()
+}
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nuevaTarea">
+    <button id="agregarTarea">Buscar</button>
+    <ul id="tareasTodas">
+    </ul>
+
+    Total: <span id="cuentaTareas"></span>
+
+    <script>
+        const listaDeTareas = document.querySelector("#tareasTodas")
+        const tareaInput = document.querySelector("#nuevaTarea")
+        const btnSumarTarea = document.querySelector("#agregarTarea")
+        const conteo = document.querySelector("#cuentaTareas")
+
+
+        
+        const tareas = []
+        btnSumarTarea.addEventListener("click", () => {
+            const nuevaTarea = tareaInput.value
+            tareas.push({id: Date.now(), nombre: nuevaTarea})
+            tareaInput.value = ""
+
+            let html = ""
+            for (let tarea of tareas) {
+                html += `<li>${tarea.nombre} <button onclick="borrar(${tarea.id})"> X </button></li>`;
+            }
+            cuentaTareas.innerHTML = tareas.length
+            listaDeTareas.innerHTML = html;
+        });
+
+        function borrar(id){
+const index = tareas.findIndex((ele) => ele.id == id)
+tareas.splice(index, 1)
+        
+let html = ""
+for (let tarea of tareas) {
+html += `<li>${tarea.nombre} <button onclick="borrar(${tarea.id})"> X </button></li>`;
+}
+cuentaTareas.innerHTML = tareas.length
+listaDeTareas.innerHTML = html;
+}
+    </script>
+</body>
+</html>
