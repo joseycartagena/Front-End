@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="elInput">
+    <button onclick="
+    pantalla = document.querySelector('#elInput').value
+    if (pantalla < 576){
+            text = document.querySelector('#elMensaje');
+            text.innerHTML = 'Tu pantalla es XS'
+        }
+        else if (pantalla <= 768) {
+            text = document.querySelector('#elMensaje');
+            text.innerHTML = 'Tu pantalla es SM'
+        }
+        else if (pantalla <= 962) {
+            text = document.querySelector('#elMensaje');
+            text.innerHTML = 'Tu pantalla es MD'
+        }
+        else {
+            text = document.querySelector('#elMensaje');
+            text.innerHTML = 'Tu pantalla es XL'
+        }
+    ">Verificar</button>
+
+    <p id="elMensaje"></p>
+</body>
+</html>

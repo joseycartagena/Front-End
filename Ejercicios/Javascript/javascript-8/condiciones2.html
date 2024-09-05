@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="elInput">
+    <button onclick="
+    value = document.querySelector('#elInput').value
+    if(value == 'pass'){
+        par = document.querySelector('#elParrafo')
+        par.innerHTML = 'Well'
+    } else {
+        par = document.querySelector('#elParrafo')
+        par.innerHTML = 'Wrong'
+    }    
+    ">Verificar
+    </button>
+    <p id="elParrafo"></p>
+
+    <script>
+
+    </script>
+</body>
+</html>
