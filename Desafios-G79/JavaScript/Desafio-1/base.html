@@ -19,10 +19,32 @@
         
               <p>Cantidad:
                 <span class="cantidad">0</span>
-                <button 
-                >+</button>
-                <button
-                >-</button>
+                <button onclick="
+                elementSuma = document.querySelector('.cantidad')
+                adicion = Number(elementSuma.innerHTML)
+                adicion = adicion + 1
+                elementSuma.innerHTML = adicion
+                
+                precioMulti = document.querySelector('.valor-total')
+                precioTotal = Number(precioMulti.innerHTML)
+                precioTotal = precioTotal + 400000
+                precioMulti.innerHTML = precioTotal
+                
+                
+                ">+</button>
+
+
+                <button onclick="
+                elementResta = document.querySelector('.cantidad')
+                sustraccion = Number(elementResta.innerHTML)
+                sustraccion = sustraccion - 1
+                elementResta.innerHTML = sustraccion
+
+                precioMenos = document.querySelector('.valor-total')
+                precioTotalMenos = Number(precioMenos.innerHTML)
+                precioTotalMenos = precioTotalMenos - 400000
+                precioMenos.innerHTML = precioTotalMenos
+                ">-</button>
               </p>
             </div>
 
