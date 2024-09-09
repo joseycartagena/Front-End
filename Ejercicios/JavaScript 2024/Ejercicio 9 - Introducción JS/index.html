@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="./assets/js/ej1.js"></script>
+    <p id="textoCero">0</p>
+    <button onclick="
+    elementPe = document.querySelector('#textoCero')
+    cuenta = Number(elementPe.innerHTML)
+    cuenta = cuenta + 1
+    elementPe.innerHTML = cuenta
+
+    ">Aumenta uno</button>
 </body>
 </html>
