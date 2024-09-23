@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="opt1"> Opción 1</label>
+<input type="checkbox" name="opt1" id="opt1">
+
+
+<label for="opt2"> Opción 1</label>
+<input type="checkbox" name="opt2" id="opt2 ">
+
+<p id="#respuesta"></p>
+
+<button onclick="
+opt1 = document.querySelector('#opt1').checked 
+opt2 = document.querySelector('#opt2').checked 
+if (opt1 == true && opt2 == true) {
+    par = document.querySelector('#respuesta')
+        par.innerHTML = ('¡Correcto!')
+}
+else {
+    alert('Los dos elementos *NO* están marcados')
+}
+"> Revisar </button>
+
+
+<button disabled="true" onclick="
+opt1 = document.querySelector('#opt1').checked 
+opt2 = document.querySelector('#opt2').checked 
+if (opt1 == true && opt2 == true) {
+    par = document.querySelector('#respuesta')
+        par.innerHTML = ('¡Correcto!')
+}
+else {
+    alert('Los dos elementos *NO* están marcados')
+}
+"> Enviar </button>
+
+
+</body>
+</html>

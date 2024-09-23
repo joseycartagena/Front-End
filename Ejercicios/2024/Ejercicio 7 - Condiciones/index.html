@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="respuesta"></p>
+    <input id="in1" type="text">
+    <input id="in2" type="text">
+    <button id="boton" onclick="
+    input1 = document.querySelector('#in1').value
+    input2 = document.querySelector('#in2').value
+
+    if (input1 == 'jose@123.cl' && input2 == 'pass123') {
+        par = document.querySelector('#respuesta')
+        par.innerHTML = ('¡Correcto!')
+    }
+    else {
+        par = document.querySelector('#respuesta')
+        par.innerHTML = ('Incorrecto!')
+    }
+    ">
+    Verificar
+    </button>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="respuesta"></p>
+    <input id="in1" type="text">
+    <input id="in2" type="text">
+    <button id="boton" onclick="
+    input1 = document.querySelector('#in1').value
+    input2 = document.querySelector('#in2').value
+    resultadoVar = Number(input1) / Number(input2)
+    if (resultadoVar >= 1) {
+        par = document.querySelector('#respuesta')
+        par.innerHTML = ('Sí alcanza!')
+    }
+    else {
+        par = document.querySelector('#respuesta')
+        par.innerHTML = ('No alcanza!')
+    }
+    ">
+    Verificar
+    </button>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

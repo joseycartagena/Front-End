@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="blue" type="text">
+    <button id="green" onclick="
+    a = document.querySelector('#blue').value
+
+    if (a < 576) {
+    alert('xs')
+}
+else if(a < 768){ 
+    alert('sm')
+}
+else if(a < 962){
+    alert('md')
+}
+else if(a < 1200){
+    alert('xl')
+}
+else{ alert('xxl')
+}
+
+    ">Ingresa el valor</button>
+
+</body>
+</html>
